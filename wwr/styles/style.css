@@ -23,6 +23,7 @@ main{
     text-align: center;
 }
  
-#background {
+#background{
     height: 725px;
+    background-color: #BBBF49;
 }
