@@ -72,3 +72,7 @@ footer{
 footer a{
     color: #BBBF49;
 }
+
+footer a:hover{
+    color: #023047 ;
+}
