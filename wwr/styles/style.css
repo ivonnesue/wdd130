@@ -11,6 +11,9 @@ nav a:hover{
     background-color: #023047;
 }
 
+nav a{
+    background-color: #023047;
+}
 #hero-msg h1, #hero-msg h4{
     text-align: center;
 }
