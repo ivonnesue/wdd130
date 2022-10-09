@@ -15,6 +15,10 @@ nav a:hover{
     color: #8ECAE6;
 }
 
+#hero-box{
+    margin-top: 0, auto;
+}
+
 .home-title{
     color: black
 }
