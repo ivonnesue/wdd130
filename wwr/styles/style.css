@@ -1,14 +1,19 @@
 #content{
     max-width: 1600px;  
 }
+.logo{
+    width: 80px;
+}
 
 Body{
     margin: 0 auto;
     background-color: white ;
 }
 nav a{
+    text-align: center;
     background-color: #023047;
     color: #8ECAE6;
+    text-decoration: none;
 
 }
 nav a:hover{
@@ -21,7 +26,12 @@ nav a:hover{
     margin: 0, auto;
 }
 #hero-img{
+    width: 100%;
     margin: 0, auto;
+}
+
+.icon{
+    width: 80px;
 }
 .home-title{
     color: black
@@ -75,6 +85,9 @@ footer a{
     color: #BBBF49;
 }
 
-footer a:hover{
+footer p a:hover{
+    font-size: 1.2em;
     color: #023047 ;
+    text-decoration: underline;
 }
+
