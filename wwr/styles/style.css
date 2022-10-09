@@ -18,7 +18,9 @@ nav a:hover{
 .home-title{
     color: black
 }
-
+h4{
+    color: #023047;
+}
 #hero-msg h1, #hero-msg h4{
     text-align: center;
 }
@@ -47,6 +49,7 @@ main{
     background-color: #BBBF49;
 }
 
-.msg{
+.msg h2{
     background-color: #BBBF49;
+    color: #023047;
 }
