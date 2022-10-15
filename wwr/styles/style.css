@@ -60,7 +60,8 @@ h4{
 }
 
 h1{
-    font-family: sans-serif;
+    font-family: 'kavoon', 'Barlow', sans-serif;
+    font-size: medium;
 }
 #hero-msg h1, #hero-msg h4{
     text-align: center;
