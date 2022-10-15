@@ -132,12 +132,12 @@ footer{
 }
 
 footer a{
-    color: #BBBF49;
+    color:#023047;
 }
 
 footer p a:hover{
     font-size: 1.2em;
-    color: #023047 ;
+    color:#BBBF49 ;
     text-decoration: underline;
 }
 
