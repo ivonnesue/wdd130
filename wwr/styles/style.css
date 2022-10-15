@@ -12,6 +12,7 @@ Body{
     background-color: white ;
     font-family: 'Barlow', Arial, Helvetica, sans-serif ;
     font-weight: normal;
+    font-size: 22px;
 }   
 nav a{
     text-align: center;
@@ -58,6 +59,7 @@ h4{
 .book, .join{
     background-color:#023047;
     color: #8ECAE6;
+    font-size: 18px;
 }
 
 .book:hover, .join:hover{
@@ -75,6 +77,7 @@ main{
 }
 
 .msg{
+    background-color: #F29F05;
     line-height: 1.5em
 }
 .msg h2{
@@ -84,6 +87,7 @@ main{
 
 .msg p{
     color: #023047;
+    font-size: .8em;
 
 }
 
