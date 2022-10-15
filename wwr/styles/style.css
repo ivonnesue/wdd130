@@ -74,6 +74,9 @@ main{
     background-color: #BBBF49;
 }
 
+.msg{
+    line-height: 1.5em
+}
 .msg h2{
     background-color: #BBBF49;
     color: #023047;
