@@ -17,14 +17,14 @@ Body{
 nav a{
     text-align: center;
     background-color: #023047;
-    color: white;
+    color: #8ECAE6;
     text-decoration: none;
 
 }
 nav a:hover{
     text-align: center;
     background-color: #BBBF49;
-    color: #8ECAE6;
+    color: white;
 }
 
 #hero-box{
