@@ -28,6 +28,7 @@ nav a{
     background-color: #023047;
     color: #8ECAE6;
     text-decoration: none;
+    padding: 35px;
 
 }
 nav a:hover{
@@ -46,6 +47,7 @@ nav a:hover{
 
 .icon{
     width: 80px;
+    padding-top: 10px;
 }
 .home-title{
     font-family: 'Barlow', Arial, sans-serif;
@@ -88,7 +90,8 @@ main{
 
 .msg{
     background-color: #BBBF49;
-    line-height: 1.5em
+    line-height: 1.5em;
+    padding: 35px
 }
 .msg h2{
     background-color: #BBBF49;
@@ -98,11 +101,13 @@ main{
 .msg p{
     color: #023047;
     font-size: .8em;
+    padding-bottom: 15px;
 
 }
 
 footer{
-    color:#023047
+    color:#023047;
+    padding: 25px 50px
 }
 
 footer a{
@@ -115,3 +120,6 @@ footer p a:hover{
     text-decoration: underline;
 }
 
+footer .social img{
+    padding-top: 15px;
+}
