@@ -56,7 +56,8 @@ nav a:hover{
     font-family: 'Barlow', Arial, sans-serif;
     font-size: 2em;
     font-weight: 700;
-    color: black
+    color: black;
+    margin-top: 10px;
 }
 h4{
     color: #023047;
@@ -76,6 +77,8 @@ h4{
     text-decoration: none;
     font-size: 18px;
     padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover, .join:hover{
@@ -83,10 +86,22 @@ h4{
     color: #023047;
 
 }
+
+.card-img{
+    border: 10px solid  #8ECAE6
+}
+.rivers-scard, .camping-card, .rapids-card{
+    margin: 200px 0;
+}
+
 main{
     text-align: center;
 }
  
+main section img{
+    box-sizing: border-box;
+}
+
 #background{
     height: 725px;
     background-color: #BBBF49;
