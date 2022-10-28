@@ -21,6 +21,8 @@ Body{
 }   
 header{
     background-color: #023047;
+    display: grid;
+    grid-template-columns: 150px auto;
 }
 h2{
     margin: 0;
