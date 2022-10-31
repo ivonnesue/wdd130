@@ -121,7 +121,14 @@ nav a:hover{
 }
 
 .card-img{
-    border: 10px solid  #8ECAE6
+    border: 10px solid  #8ECAE6;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364
+
+}
+.card-img:hover{
+    opacity: .6;
+    transform: scale(1.1);
 }
 .card-img, .mountains{
     width: 100%
@@ -155,10 +162,7 @@ nav a:hover{
     grid-row: 5/8
 }
 
-.msg{
-    grid-column: 6/10;
-    grid-row: 6/7
-}
+
 
 main{
     text-align: center;
@@ -173,12 +177,15 @@ main section img{
 }
 
 .msg{
-    background-color: #BBBF49;
+    background-color: #6f7364;
     line-height: 1.5em;
-    padding: 35px
+    padding: 35px;
+    grid-column: 6/10;
+    grid-row: 6/7;
+    box-shadow: 5px 5px 10px #6f7364;
 }
 .msg h2{
-    background-color: #BBBF49;
+    
     color: #023047;
 }
 
