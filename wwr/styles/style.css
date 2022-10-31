@@ -113,6 +113,12 @@ nav a:hover{
     color: #023047;
 
 }
+ 
+.home-grid{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 1fr, 3fr, 1fr, 1fr, 0.5fr, 3fr, 0.5fr, 0.75fr, 1fr
+}
 
 .card-img{
     border: 10px solid  #8ECAE6
@@ -124,13 +130,12 @@ nav a:hover{
     margin: 200px 0;
 }
 
+.rivers-card{
+    grid-column: 2/4;
+    grid-row: 2/3
+}
 main{
     text-align: center;
-}
- 
-.home-grid{
-    display: grid;
-    grid-template-columns: repeat(10, 1fr)
 }
 main section img{
     box-sizing: border-box;
