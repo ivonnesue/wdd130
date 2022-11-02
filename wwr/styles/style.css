@@ -2,7 +2,7 @@
 
 body {
     background-color: #fcfbfb ;
-    font-family: Barlow, kavoon, arial, helvetica, sans-serif ;
+    font-family: 'Barlow', 'kavoon', arial, helvetica, sans-serif ;
     font-weight: normal; 
     font-size: 22px;
     margin: 0%;
@@ -41,7 +41,7 @@ header img {
 
 .home-title{
     font-size: 2em;
-    font-family: kavoon, Barlow, sans-serif;
+    font-family: 'Kavoon', 'barlow', sans-serif;
     margin-top: 10px;
     
 }
@@ -93,7 +93,9 @@ nav a:hover {
 
 #hero-msg h1{
     text-align: center;
-    color: #F29F05 ;
+    color: #F29F05;
+    font-family: 'Kavoon';
+    font-size: 2em;
 }
 
 .home-grid{
