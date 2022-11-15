@@ -253,6 +253,8 @@ footer .social img{
     grid-column-gap: 50px;
     grid-row-gap: 50px;
     padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
 
 }
 .trip1{
