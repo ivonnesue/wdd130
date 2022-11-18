@@ -317,7 +317,7 @@ ul{
 
 }
 
-/*book form form properties*/
+/*book form properties*/
 #form{
     width: 700px;
     margin: 0 auto;
@@ -369,7 +369,7 @@ div.elem-group {
     border: none;
     color: white;
     font-size: 1.25em;
-    font-family: 'Nanum Gothic';
+    font-family: 'Barlow';
     border-radius: 4px;
     cursor: pointer;
   }
@@ -378,11 +378,94 @@ div.elem-group {
     border: 2px solid black;
   }
 
+/* Contact form properties*/
+form {
+    /* Center the form on the page */
+
+    margin: 0 auto;
+    margin-top: 10%;
+    max-width: 700px;
+    /* Form outline */
+    padding: 1em;
+    
+    border: 1px solid #ccc;
+    border-radius: 1em;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  form li + li {
+    margin-top: 1em;
+  }
+  
+  label {
+    /* Uniform size & alignment */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+    font-family: Barlow, Arial, Helvetica, sans-serif;
+    padding-right: 30px;
+  }
+  
+  input,
+  textarea {
+    /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+    font: 1em;
+    font-family: Barlow, Arial, Helvetica, sans-serif;
+  
+    /* Uniform text field size */
+    width: 400px;
+    box-sizing: border-box;
+  
+    /* Match form field borders */
+    border: 1px solid #999;
+  }
+  
+  input:focus,
+  textarea:focus {
+    /* Additional highlight for focused elements */
+    border-color: #000;
+  }
+  
+  textarea {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+  
+    /* Provide space to type some text */
+    height: 5em;
+  }
+  
+  .button {
+    /* Align buttons with the text fields */
+    padding-left: 90px; /* same size as the label elements */
+  }
+  
+  button{
+    /* This extra margin represent roughly the same space as the space
+       between the labels and their text fields */
+    margin-left: 0.5em;
+    background-color: #023047;
+    color: #8ECAE6;
+    
+  }
+  button:hover{
+    /* This extra margin represent roughly the same space as the space
+       between the labels and their text fields */
+    background-color:#BBBF49;
+    color:#023047
+    
+  }
+  
 
 /* responsive properties */
 
 @media screen and (max-width: 900px) {
-    #hero, .home-grid, .rates-grid {
+    #hero, .home-grid, .rates-grid, form {
         display: block;
         height: auto;
     }
