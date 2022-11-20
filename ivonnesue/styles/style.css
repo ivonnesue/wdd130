@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,900&display=swap');
+
+/*Body Properties*/
+body {
+    background-color: #ffff ;
+    font-family: 'Roboto', arial, helvetica, sans-serif ;
+    font-weight: normal; 
+    font-size: 22px;
+    margin: 0%;
+    padding: 5px;
+}
+
+#logo_link {
+    padding: 5px;
+    justify-self: center;
+    align-self: center;
+}
+
+#content {
+    max-width: 1600px;  
+    margin: 0 auto;
+}
+
+header {
+    max-height: 100px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 100px auto;
+}
+
+header img {
+    width: 50%;
+}
+nav {
+    display:flex;
+    justify-content:left;
+    margin-top: auto;
+   
+}
+nav a {
+    font-size: 28px;
+    text-decoration: none;
+    background-color: #F2ACB2;
+    color:#044bd9 ;
+    text-align: center;
+    padding: 30px ;
+    row-gap: 10px;
+
+}
+nav a:hover {
+    background-color: #f2274c;
+    color: white;
+}
+
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+
+}
+#hero-box { 
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+    width: 100%;
+}
+#hero-box img {
+    width: 100%; 
+    height: auto; 
+}
+#hero-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 35%;
+}
+
+#hero-msg h1{
+    text-align: center;
+    color: #f2274c;
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-size: 2em;
+}
+
+#hero-msg h3 {
+    color:  black;
+    text-align: center;
+}
+
+.check{
+    background-color: #f2acb2;
+    color: #044bd9;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+.check:hover {
+    background-color: #f2274c;
+    color: white;
+
+}
+
+.button-box{
+    text-align: center;
+    /*background-color: #fcfbfb;*/
+}
+
+p{
+    grid-column: 1/4;
+    padding: 5%
+}
+.home-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /*grid-template-rows: 1fr, 3fr, 1fr, 1fr, 0.5fr, 3fr, 0.5fr, 0.75fr, 1fr*/
+}
+
+.home-grid, h1{
+    grid-column: 1/4;
+    grid-row: 1/2;
+    margin: auto;
+}
+
+.msg{
+    grid-column: 1/4;
+    grid-row: 2/3;
+    text-align: justify;
+}
+.profile{
+    width: 100%;
+    align-self: center;
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+
+footer{
+    background-color: #f2acb2;
+    color:#044bd9;
+    padding: 25px 25px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+footer a{
+    color:#044bd9;
+    text-decoration: none;
+}
+
+footer p a:hover{
+    font-size: 1.2em;
+    color:#f2274c;
+    text-decoration: none;
+}
+
+footer .social img{
+    padding-top: 15px;
+}
