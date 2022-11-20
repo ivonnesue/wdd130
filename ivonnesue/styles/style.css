@@ -30,10 +30,10 @@ header {
 
 header img {
     width: 50%;
+    margin-left: 30%;
 }
 nav {
     display:flex;
-    justify-content:left;
     margin-top: auto;
    
 }
@@ -43,8 +43,8 @@ nav a {
     background-color: #F2ACB2;
     color:#044bd9 ;
     text-align: center;
-    padding: 30px ;
-    row-gap: 10px;
+    padding: 30px 50px;
+    gap: 15px;
 
 }
 nav a:hover {
@@ -136,9 +136,9 @@ p{
 }
 
 footer{
+    max-height: 150px;
     background-color: #f2acb2;
     color:#044bd9;
-    padding: 25px 25px;
     margin-top: 50px;
     display: flex;
     justify-content: left;
