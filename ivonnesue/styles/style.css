@@ -23,7 +23,7 @@ body {
 }
 
 header {
-    max-height: 100px;
+    max-height: 80px;
     background-color:aliceblue;
     display: flex;
     
