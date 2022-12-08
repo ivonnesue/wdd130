@@ -175,6 +175,7 @@ p{
     grid-row: 1/2;
     margin: 0 auto;
     padding-bottom: 5%;
+    color:#044bd9;
 }
 
 .msg{
@@ -182,6 +183,7 @@ p{
     grid-row: 2/3;
     text-align: left;
     font-size: 28px;
+    color: black
 }
 .profile{
     width: 100%;
@@ -190,6 +192,7 @@ p{
     grid-row: 2/3;
 }
 
+/*Child page 1 and child page 2 attributes*/
 .main {
     max-width: 100%;
     margin: auto;
@@ -200,6 +203,11 @@ p{
     word-break: break-all;
   }
   
+  h2{
+    text-align: center;
+    color: #044bd9;
+    font-weight:900;
+  }
   .row {
     margin: 8px -16px;
   }
