@@ -60,7 +60,7 @@ nav a:hover {
     background-image: 
     linear-gradient(rgba(0, 0, 0, 0.5), 
     rgba(0, 0, 0, 0.5)),
-    url("images/rsz_hero_home_opt-01.jpg");
+    url("/ivonnesue/images/rsz_hero_home_opt-01.jpg");
   
     /* Set a specific height */
     height: 50%;
