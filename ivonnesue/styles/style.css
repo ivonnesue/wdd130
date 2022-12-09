@@ -189,6 +189,11 @@ p.asset-p{
     font-size: 28px;
 }
 
+
+.portfolio-p{
+    text-align: center;
+    font-size: 28px;
+}
 footer{
     max-height: 150px;
     background-color: #f2acb2;
