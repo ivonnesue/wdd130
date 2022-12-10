@@ -21,41 +21,53 @@ body {
     margin: 0 auto;
 }
 
-header {
-    max-height: 80px;
-    background-color:aliceblue;
-    display: flex;
-    
-}
-
-header img {
-    width: 70%;
-    margin-right: 10%;
-    max-height: 100px;
-    
-}
-nav {
-    display:flex;
-    margin-top: auto;
-    gap: 20px;
-   
-}
-nav a {
-    font-size: 28px;
-    font-weight: 700;
-    text-decoration: none;
-    /*background-color: #F2ACB2;*/
-    color:#044bd9 ;
+/* Style the header with a grey background and some padding */
+.header {
+    overflow: hidden;
+    background-color: aliceblue;
+    padding: 20px 10px;
+  }
+  
+  /* Style the header links */
+  .header a {
+    float: left;
+    color: #044bd9;
     text-align: center;
-    padding: 30px ;
-    gap: 15px;
-
-}
-nav a:hover {
-
-    color: #f2274c ;
-}
-
+    padding: 12px;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  
+  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+  .header a.logo {
+    padding: 12px;
+  }
+  .header a.logo:hover{
+    background-color:aliceblue;
+  }
+  img{
+    width: 200px;
+  }
+  
+  /* Change the background color on mouse-over */
+  .header a:hover {
+    background-color: #f2274c;
+    color: white;
+  }
+  
+  /* Style the active/current link*/
+  .header a.active {
+    background-color: #f2274c;
+    color: white;
+  }
+  
+  /* Float the link section to the right */
+  .header-right {
+    float: right;
+  }
 #hero {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -188,22 +200,27 @@ p.asset-p{
     text-align: center;
     font-size: 28px;
 }
-
-
 .portfolio-p{
     text-align: center;
     font-size: 28px;
 }
+
+/*space div in form.html*/
+.space{
+    height:150px
+}
+/*Footer styles for all pages*/
 footer{
-    position:relative;
+    position:static;
+    bottom: 0;
     max-height: 150px;
-    background-color: aliceblue;
-    color:#044bd9;
     margin-top: 50px;
     display: flex;
     justify-content: space-evenly;
     padding: 5px;
     font-weight: 700;
+    background-color: aliceblue;
+    color:#044bd9;
     
 }
 
@@ -278,7 +295,7 @@ input[type=text], select, textarea{
   }
   
   /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .col-25, .col-75, input[type=submit] {
       width: 100%;
       margin-top: 0;
@@ -330,7 +347,7 @@ input[type=text], select, textarea{
 }
 
  
-  /* Responsive layout - makes a two column-layout instead of four columns */
+/* Responsive layout - makes a two column-layout instead of four columns */
   @media screen and (max-width: 900px) {
     .column {
       width: 50%;
@@ -342,5 +359,17 @@ input[type=text], select, textarea{
 @media screen and (max-width: 600px) {
     .column {
       width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .header-right {
+      float: none;
     }
   }
