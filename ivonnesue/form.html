@@ -4,85 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dates & Rates | Dry Oar Boating </title>
+    <title>Ivonne Sue | Graphic Designer | Form</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
- <div id="content" >
-     <header>
-         <a id="logo_link" href="index.html">
-             <img class="logo" src="images/logo.png" alt="Dry Oar logo">
-         </a>
-         <nav>
-             <a href="index.html">Home</a>
-             <a href="rates.html">Rates & Dates</a>
-             <a href="site-plan-rafting.html">Site Plan</a>
-             <a href="contactus.html">Contact Us</a>
-         </nav>
-     </header>
 <body>
-    <div id="form">
-        <form action="reservation.php" method="post">
-            <div class="elem-group">
-              <label for="name">Your Name</label>
-              <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
-            </div>
-            <div class="elem-group">
-              <label for="email">Your E-mail</label>
-              <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
-            </div>
-            <div class="elem-group">
-              <label for="phone">Your Phone</label>
-              <input type="tel" id="phone" name="visitor_phone" placeholder="498-348-3872" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
-            </div>
-            <hr>
-            <div class="elem-group inlined">
-              <label for="adult">Adults</label>
-              <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
-            </div>
-            <div class="elem-group inlined">
-              <label for="child">Children</label>
-              <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
-            </div>
-            <div class="elem-group inlined">
-              <label for="checkin-date">Check-in Date</label>
-              <input type="date" id="checkin-date" name="checkin" required>
-            </div>
-            <div class="elem-group inlined">
-              <label for="checkout-date">Check-out Date</label>
-              <input type="date" id="checkout-date" name="checkout" required>
-            </div>
-            <div class="elem-group">
-              <label for="room-selection">Select a Trip</label>
-              <select id="room-selection" name="trip_preference" required>
-                  <option value="">Choose a Trip</option>
-                  <option value="Trip1">Grand Canyon 3 nights</option>
-                  <option value="Trip2">Grand Canyon 6 nights</option>
-                  <option value="Trip3">Salmon River 5 nights</option>
-                  <option value="Trip3">Desolation 6 nights</option>
-              </select>
-            </div>
-            <hr>
-            <div class="elem-group">
-              <label for="message">Anything Else?</label>
-              <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important." required></textarea>
-            </div>
-            <button type="submit">Book Your Trip</button>
-          </form>   
+    <div id="content">
+        <header>
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/logo-yellowtip-transparent-08.png" alt="Ivonne Sue logo">
+            </a>
+            <nav>
+                <a href="work.html">Porfolio</a>
+                <a href="assets.html">Assets</a>
+                <a href="index.html">Ivonne Ramos</a>
+            </nav>
+        </header>
+<h2>Contact me</h2>
+
+    <div class="form-container">
+      <form action="/action_page.php">
+        <div class="row">
+          <div class="col-25">
+            <label for="fname">First Name</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="lname">Last Name</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="subject">Subject</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="lname" name="lastname" placeholder="Write something..">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="message">Message</label>
+          </div>
+          <div class="col-75">
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
     </div>
-</body>
-<footer>
-    <p>Dry Oar &copy; 2022 - Ivonne Ramos</p>
-    <p><a href="site-plan-rafting.html">Site Plan</a></p>
-    <p><a href="contactus.html">Contact Us</a></p>
-    <div class="social">
-        <a href="https://facebook.com" target="_blank">
-            <img src="images/facebook.png" alt="fb icon">
-        </a>
-        <a href="https://twitter.com" target="_blank">
-            <img src="images/twitter.png" alt="twitter icon">
-        </a>
-        <a href="https://instagram.com" target="_blank">
-            <img src="images/instagram.png" alt="instagram icon">
-        </a>
-    </div>
+    <footer>
+    <p>Ivonne Sue &copy; 2022 - Ivonne Ramos</p>
+    <p><a href="https://www.behance.net/ivonnesue">Behance</a></p>
+    <p><a href="https://www.linkedin.com/in/ivonne-s-aponte">LinkedIn</a></p>
+    <p><a href="form.html">Contact</a></p>
 </footer>
+</body>
+</html>
+<script>
+  // get the feedback div element so we can do something with it.
+  const feedbackElement = document.getElementById('feedback');
+  // get the form so we can read what was entered in it.
+  const formElement = document.forms[0];
+  // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+  formElement.addEventListener('submit', function(e) {
+      // stop the form from doing the default action.
+      e.preventDefault();
+      // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+      feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+      // make the feedback element visible.
+      feedbackElement.style.display = "block";
+      // add a class to move everything down so our message doesn't cover it.
+      document.body.classList.toggle('moveDown');
+  });
+</script>
