@@ -206,10 +206,8 @@ p.asset-p{
     font-size: 28px;
 }
 
-/*space div in form.html*/
-.space{
-    height:150px
-}
+
+
 /*Footer styles for all pages*/
 footer{
     position:static;
@@ -238,63 +236,101 @@ footer p a:hover{
 }
 
 /*contact form properties*/
-/* Style inputs, select elements and textareas */
-input[type=text], select, textarea{
-    width: 75%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    resize: vertical;
-  }
+
+form {
+/* Center the form on the page */
+margin: 0 auto;
+width: 500px;
+/* Form outline */
+padding: 1em;
+border: 1px solid #f2274c;
+border-radius: 1em;
+}
+
+ul {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+form li + li {
+margin-top: 1em;
+}
+
+label {
+/* Uniform size & alignment */
+display: inline-block;
+width: 100px;
+padding-left: 20px;
+text-align: right;
+}
+
+input,
+textarea {
+/* To make sure that all text fields have the same font settings
+   By default, textareas have a monospace font */
+font: 1em "Roboto";
+
+/* Uniform text field size */
+width: 300px;
+box-sizing: border-box;
+
+/* Match form field borders */
+border: 1px solid #f2274c;
+}
+
+input:focus,
+textarea:focus {
+/* Additional highlight for focused elements */
+border-color: #000;
+}
+
+textarea {
+/* Align multiline text fields with their labels */
+vertical-align: top;
+
+/* Provide space to type some text */
+height: 5em;
+}
+
+.button {
+/* Align buttons with the text fields */
+padding-left: 120px; /* same size as the label elements */
+}
+
+
+button {
+/* This extra margin represent roughly the same space as the space
+   between the labels and their text fields */
+margin-left: 0.5em;
+background-color: #f2274c;
+color: white;
+padding: 5px;
+border-radius: 0.5em;
+border-color: #f2274c;
+}
+#feedback {
+  background-color: antiquewhite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: .5em;
+  /* make this element invisible until we are ready for it */
+  display: none;      
+}
+.moveDown {
+  margin-top: 4em;
+}
   
-  /* Style the label to display next to the inputs */
-  label {
-    padding: 12px 12px 12px 0;
-    display: inline-block;
-  }
-  
-  /* Style the submit button */
-  input[type=submit] {
-    background-color: #f2274c;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    float: right;
-  }
-  
-  /* Style the container */
-  .form-container {
-    margin: 0 auto;
-    width: 75%;
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-  }
-  
-  /* Floating column for labels: 25% width */
-  .col-25 {
-    float: left;
-    width: 25%;
-    margin-top: 6px;
-  }
-  
-  /* Floating column for inputs: 75% width */
-  .col-75 {
-    float: left;
-    width: 75%;
-    margin-top: 6px;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
+/*space div in form.html*/
+.space{
+  height:280px
+}
+.space-2{
+height: 150px
+}
+
   /* Responsive layout for contact form- when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
     .col-25, .col-75, input[type=submit] {

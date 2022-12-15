@@ -17,47 +17,28 @@
           <a href="assets.html">Assets</a>
         </div>
       </div>
-<h2>Contact me</h2>
-
-    <div class="form-container">
-      <form action="/action_page.php">
-        <div class="row">
-          <div class="col-25">
-            <label for="fname">Name</label>
-          </div>
-          <div class="col-75">
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-25">
-            <label for="mail">E-mail</label>
-          </div>
-          <div class="col-75">
-            <input type="email" id="email" name="E-mail" placeholder= "Your email..">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-25">
-            <label for="subject">Subject</label>
-          </div>
-          <div class="col-75">
-            <input type="text" id="lname" name="lastname" placeholder="Write something..">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-25">
-            <label for="message">Message</label>
-          </div>
-          <div class="col-75">
-            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-          </div>
-        </div>
-        <div class="row">
-          <input type="submit" value="Submit">
-        </div>
-      </form>
-    </div>
+<div class="space-2"></div>
+<h2>Contact me</h2>  
+<div id="feedback"></div>
+  <form action="/my-handling-form-page" method="post">
+    <ul>
+      <li>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="user_name" />
+      </li>
+      <li>
+        <label for="mail">E-mail:</label>
+        <input type="email" id="mail" name="user_email" />
+      </li>
+      <li>
+        <label for="msg">Message:</label>
+        <textarea id="msg" name="user_message"></textarea>
+      </li>
+      <li class="button">
+        <button type="submit">Send your message</button>
+      </li>
+    </ul>
+   </form>
     <div class="space"></div>
     <footer>
       <p>Ivonne Sue &copy; 2022 - Ivonne Ramos</p>
